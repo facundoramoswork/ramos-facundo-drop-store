@@ -1,0 +1,19 @@
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(62, 53, 116);
+    height: auto;
+}
+
+footer img{
+    width: 150px;
+    height: auto;
+}
+
+h5{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 30px;
+}

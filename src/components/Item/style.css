@@ -1,0 +1,50 @@
+.item{
+    background-color: transparent;
+    box-shadow: 0 0 20px 0 rgb(104, 19, 183);
+/*     box-shadow: 0 10px 10px 10px rgb(104, 19, 183; */
+    padding: 20px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+h2{
+    font-size: 26px;
+    color: rgb(237, 225, 245);
+    font-weight: 700;
+    text-align: center;
+
+}
+
+p{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(40, 6, 57);
+    text-align: center;
+}
+
+h3{
+    color: rgb(174, 140, 255);
+    text-align: center;
+}
+
+h4{
+    text-align: right;
+    color: rgb(95, 4, 223);
+}
+
+.img{
+    background-color: aliceblue;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img img{
+    width: 60%;
+    height: auto;
+}
+
+.img:hover {
+    box-shadow: 0 10px 10px 10px rgb(104, 19, 183);
+}

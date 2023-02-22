@@ -1,0 +1,19 @@
+.destacados{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 18px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 40.5px;
+    text-shadow: 8px 11px rgb(235, 217, 254);
+}
+
+.subt{
+    font-size: 28px;
+    text-align: start;
+    padding-top: 100px;
+}

@@ -1,0 +1,20 @@
+.error404{
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    height: 700px;
+}
+.tit404{
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: none;
+}
+
+.subt404{
+    font-size: 35px;
+    color: rgb(228, 199, 255);
+}

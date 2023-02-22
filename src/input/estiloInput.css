@@ -1,0 +1,7 @@
+
+input {
+    display:flex ;
+    flex-direction: column;
+    width: 180px;
+    margin: 10px;
+}

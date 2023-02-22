@@ -1,0 +1,9 @@
+.itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(140, 69, 207);
+    color: whitesmoke;
+}
+

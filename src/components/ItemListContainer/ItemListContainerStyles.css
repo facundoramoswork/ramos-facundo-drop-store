@@ -1,0 +1,11 @@
+.saludo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: bisque;
+    height: 500px;
+    margin: 0px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(62 53 116);
+}
