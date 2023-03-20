@@ -35,6 +35,10 @@ export default function NavBar(){
                     to= "/category/pants">PANTS
                     </NavLink>
                 </li>
+                <li>
+                    <Link to= "/Destacados"> UNDER 100 </Link>
+                    
+                </li>
             </ul>
             <CartWidget/>
         </nav>

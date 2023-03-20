@@ -4,7 +4,7 @@ import "./FooterStyles.css"
 export default function Footer(){
     return(
         <footer>
-            <h5>2023 - © Derechos reservados a sus respectivos autores</h5>
+            <h6> {new Date().getFullYear()} - © Derechos reservados a sus respectivos autores | Sitio creado por Facundo Ramos</h6>
             <img src={ImagenFooter} />
         </footer>
     )

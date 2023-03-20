@@ -5,6 +5,7 @@ footer{
     justify-content: flex-end;
     background-color: rgb(62, 53, 116);
     height: auto;
+    margin: none;
 }
 
 footer img{
@@ -12,7 +13,9 @@ footer img{
     height: auto;
 }
 
-h5{
+h6{
+    color: rgb(250, 250, 250);
+    font-size: 13px;
     text-align: center;
     margin-right: 20px;
     margin-top: 30px;

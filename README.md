@@ -1,70 +1,16 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](./drop-store-tienda.gif)
 
-## Available Scripts
+# DROP STORE - FACUNDO RAMOS
 
-In the project directory, you can run:
+Drop store es el nombre elegido para crear mi tienda que simula la comercialización de productos de moda y deportes de la marca Nike (derechos de marca reservados a sus respectivos dueños).
 
-### `npm start`
+## Librerias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - Utilicé la libreria de react-icons para el ícono del CartWidget.
+ - No se implementaron otras librerías (* intente utilizar sweet alert 2 react pero me dió problemas en su instalación y desistí    por falta de tiempo lamentablemente no pude traer ese plus en la UI.)
+ - No se utilizó Bootstrap react, material UI, o alguna del estilo, intenté realizar lo más vanilla posible en cuanto a diseño, estilos y animaciones incluídas en el sitio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Idea original
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La idea se me ocurrió porque me gusta mucho la marca y me parecía interesante una tienda con productos vistosos y conocidos por todo el mundo como lo es Nike, además de que me posibilitaría el uso de categorías y variedades de precios sin vender items de diferentes sectores del mercado en un mismo sitio (ejemplo venta de ropa, tecnología, joyería todo dentro de un mismo sitio del estilo "bazar").

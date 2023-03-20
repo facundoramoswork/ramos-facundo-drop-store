@@ -1,28 +1,33 @@
 
-import { useParams } from "react-router-dom"
-import { Productos } from "../../data/Productos";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { getFirestore, doc, getDoc} from 'firebase/firestore';
+
+
 const ItemDetailContainer = () => {
   const {id} = useParams();
   const [detailView , setDetailView] = useState ({});
-  const giveMeDetails = new Promise ((resolve, reject) => {
-    setTimeout (() => {
-    const detalleProducto = Productos.find (item => item.id == id);
-    console.log(detalleProducto);
-    resolve(detalleProducto)
-  }, 1000)} 
-  );
+  
+  const getDetails = () => {
+    const database = getFirestore();
+    const querySnapshot = doc (database, 'Products', id);
 
-  useEffect ( () => {
-    giveMeDetails
-    .then(response => {console.log(response);
-    setDetailView(response);
+    getDoc(querySnapshot)
+    .then((response)=>{
+      setDetailView({
+        id: response.id,
+        ...response.data()
+      });
     })
-    .catch ((error) => {console.log(error)
-    });
+    .catch((error)=> console.log(error));
+  }
+
+  useEffect (() => {
+    getDetails();
   }, 
   [])
+
   return (
     <div><ItemDetail detalle= {detailView} />
     </div>
