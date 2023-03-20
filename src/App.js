@@ -7,7 +7,6 @@ import Cart from './components/Cart/Cart';
 import CartProvider from './context/CartProvider';
 import NavBar from './components/NavBar/NavBar';
 import NotFound from './NotFound/NotFound';
-import ItemDetailComponent from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
