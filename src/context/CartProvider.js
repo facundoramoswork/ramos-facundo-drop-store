@@ -11,40 +11,40 @@ const CartProvider = ({children}) => {
         setTotal(cart.reduce((acc, curr)=> acc + curr.precio * curr.cantidad , 0)
     )}, [cart]);
 
-    const addItem = (product, cantidad)=> {
+    const addItem = (item, cantidad)=> {
         const isInCart = (id)=> {
-            if(cart.find((product)=> product.id === id)){
+            if(cart.find((item)=> item.id === id)){
                 console.log(isInCart)
                 return true ;
             }else {
                 return false;
             }
         }
-        if(isInCart(product.id)){
-            const cartMap = cart.map((product)=>{
-                if (product.id === id){
-                    product.cantidad + cantidad
-                    return product
+        if(isInCart(item.id)){
+            const cartMap = cart.map((id)=>{
+                if (item.id === id){
+                    item.cantidad + cantidad
+                    return item
                 }else {
-                    return product
+                    return item
                 }
             })
             setCart(cartMap);
         }else {
-            const item = {
-                id: product.id,
-                name: product.name,
-                descripcion: product.descripcion,
-                color: product.color,
-                precio: product.precio,
-                genero: product.genero,
-                stock: product.stock,
-                category: product.category,
-                imagen: product.imagen,
+            const product = {
+                id: item.id,
+                name: item.name,
+                descripcion: item.descripcion,
+                color: item.color,
+                precio: item.precio,
+                genero: item.genero,
+                stock: item.stock,
+                category: item.category,
+                imagen: item.imagen,
                 cantidad: cantidad
             };
-            console.log(item);
-            setCart([...cart, item]);
+            console.log(product);
+            setCart([...cart, product]);
             }
         }
 
