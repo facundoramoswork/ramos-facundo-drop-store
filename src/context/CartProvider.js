@@ -13,20 +13,21 @@ const CartProvider = ({children}) => {
 
     const addItem = (item, cantidad)=> {
         const isInCart = (id)=> {
-            if(cart.find((item)=> item.id === id)){
+            if(cart.find((product)=> product.id === id)){
                 console.log(isInCart)
                 return true ;
             }else {
                 return false;
             }
         }
+        
         if(isInCart(item.id)){
-            const cartMap = cart.map((item)=>{
-                if (item.id === id){
-                    item.cantidad + cantidad
-                    return item
+            const cartMap = cart.map((product)=>{
+                if (product.id === item.id){
+                    product.cantidad = product.cantidad + cantidad
+                    return product
                 }else {
-                    return item
+                    return product
                 }
             })
             setCart(cartMap);
